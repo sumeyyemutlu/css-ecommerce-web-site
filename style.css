@@ -41,8 +41,10 @@ p{
 }
 .row {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center; 
+    flex-wrap: wrap;/* özellikle responsive design için çok işe yarıyor*/
+    /*belirli bir kurala göre verdiğimiz özelliklerde ekran küçülünce sığmama oluyor*/
+    /*scrolllar çıkmaması için alta geçiren bir özellik aslında*/
     justify-content: space-around
 }
 .col-2 {
@@ -193,7 +195,7 @@ small {
     filter: grayscale(0);
 }
 
-/*footer*/
+/*********footer**********/
 .footer {
     background: #000;
     color: #8a8a8a;
@@ -251,6 +253,37 @@ ul{
     display: none; /* hamburger görünümü gözükmesin */
 }
 
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select {
+    border: 1px solid #ff523b;
+    padding:5px;
+}
+select:focus {
+    outline: none;
+}
+.page-btn {
+    margin: 0 auto 80px;
+}
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+
+
  /*************responsive design******************/
 
  /*media for menu*/
@@ -288,4 +321,5 @@ ul{
         flex-basis: 100%;
     }
 }
+
 
